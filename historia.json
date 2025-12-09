@@ -1,0 +1,202 @@
+{
+    "1": {
+        "texto": "Você acorda em um quarto branco que claramente não é o seu. Ao olhar ao redor, percebe que está em um hospital. Sua última lembrança é o momento em que perdeu o controle do carro em uma estrada chuvosa. Ainda desorientado, você coloca suas roupas que estavam no armário e sai do quarto procurando alguém que possa explicar o que aconteceu — mas o lugar está completamente vazio. Por que um hospital estaria assim durante o dia? Você caminha pelos corredores em busca de respostas, até ouvir um barulho atrás de uma porta, como se alguém estivesse tentando abri-la.",
+        "opcoes": [
+            {
+                "texto": "Abrir porta.",
+                "vaiPara": "2"
+            },
+            {
+                "texto": "Continuar andando.",
+                "vaiPara": "3"
+            }
+        ]
+    },
+    "2": {
+        "texto": "Você gira a maçaneta e o barulho cessa imediatamente. Ao abrir a porta devagar, vê uma sombra parecida com uma criança. Antes que consiga entender o que está vendo, a sombra dispara na sua direção. Você tenta correr, mas tropeça e cai, sentindo uma dor aguda no braço esquerdo enfaixado.",
+        "opcoes": [
+            {
+                "texto": "Tente fechar a porta antes que a sombra alcance você. Role os dados.",
+                "teste": {
+                    "dado": 6,
+                    "dificuldade": 7,
+                    "sucesso": "4",
+                    "falha": "15"
+                }
+            }
+        ]
+    },
+    "3": {
+        "texto": "À medida que você se aproxima, as pancadas ficam mais fortes. Decide virar o corredor e continuar andando, torcendo para encontrar alguém que possa ajudar. Logo, rastros de sangue aparecem no chão, como se alguém ferido tivesse se arrastado por ali. O rastro termina em uma médica caída, com as pernas dilaceradas como se tivesse sido atacada por algum animal. Você verifica se ela ainda está viva — e ela começa a gritar, tentando te agarrar, sem conseguir se mover. Assustado, você entra em uma sala de internação, pega um suporte metálico, remove o monitor e o transforma em uma barra de ferro improvisada. Em seguida, pega um kit de primeiros socorros. Então corre para a saída mais próxima e chega aos fundos do hospital. De um lado você se depara com um matagal que leva para um bosque, do outro você vê a saída do hospital para a cidade.",
+        "itens": [
+            "Barra de ferro",
+            "Kit de primeiros socorros"
+        ],
+        "opcoes": [
+            {
+                "texto": "Ir para o bosque.",
+                "vaiPara": "5"
+            },
+            {
+                "texto": "Ir para a cidade.",
+                "vaiPara": "6"
+            }
+        ]
+    },
+    "4": {
+        "texto": "A sombra continua correndo na sua direção, então você se levanta rapidamente e fecha a porta, trancando-a. Ela balança com força enquanto algo do outro lado tenta arrombá-la. Sem perder tempo, você segue até a saída mais próxima e sai pelos fundos do hospital. De um lado você se depara com um matagal que leva para um bosque, do outro você vê a saída do hospital para a cidade.",
+        "dano": 1,
+        "opcoes": [
+            {
+                "texto": "Ir para o bosque.",
+                "vaiPara": "5"
+            },
+            {
+                "texto": "Ir para a cidade.",
+                "vaiPara": "6"
+            }
+        ]
+    },
+    "5": {
+        "texto": "Depois de atravessar o matagal, você entra no bosque. A luz do sol quase não atravessa as copas das árvores. Você anda devagar, tentando controlar o som dos seus passos, quando escuta galhos se partindo bem perto. Seu coração aperta e você se abaixa, escondendo-se atrás de uma árvore. Um coelho assusta-se e corre, mas o nervosismo não vai embora. Ao seu lado, você encontra um pedaço de madeira relativamente pesado — não é a arma ideal, mas é melhor do que nada. Enquanto respira fundo para se acalmar, você percebe sombras se movendo entre as árvores, silenciosas demais para serem animais comuns.",
+        "itens": [
+            "Pedaço de madeira"
+        ],
+        "opcoes": [
+            {
+                "texto": "Seguir pelo bosque tentando ser furtivo.",
+                "vaiPara": "7"
+            },
+            {
+                "texto": "Subir em uma árvore para ter visão melhor.",
+                "vaiPara": "8"
+            },
+            {
+                "texto": "Correr para longe do som, seguindo um caminho estreito à direita.",
+                "vaiPara": "9"
+            }
+        ]
+    },
+    "6": {
+        "texto": "Você atravessa o estacionamento deserto do hospital e segue para a rua principal da cidade. O silêncio é perturbador — não há carros passando, não há pessoas nas calçadas, nem o barulho rotineiro da vida urbana. Portas de lojas estão abertas como se as pessoas tivessem saído às pressas. Mais à frente, você vê um carro batido em um poste e marcas de sangue no chão. O vento empurra uma folha de jornal que se prende no seu pé. Em letras grandes, você lê: 'SURTO INEXPLICÁVEL — GOVERNO DECLARA ESTADO DE EMERGÊNCIA'. Antes que possa processar tudo, você ouve um gemido baixo vindo de dentro de uma farmácia com a porta entreaberta.",
+        "opcoes": [
+            {
+                "texto": "Entrar na farmácia.",
+                "vaiPara": "10"
+            },
+            {
+                "texto": "Seguir pela rua principal em direção ao centro.",
+                "vaiPara": "11"
+            },
+            {
+                "texto": "Tentar entrar em uma casa próxima para se esconder.",
+                "vaiPara": "12"
+            }
+        ]
+    },
+    "7": {
+        "texto": "Você tenta permanecer em silêncio, avançando lentamente entre as árvores escuras. É então que um estalo seco ecoa bem perto — e quando vira o rosto, um zumbi surge cambaleando entre os arbustos, atraído pelo som. Ele ainda não está tão perto, mas já te viu.",
+        "teste": {
+            "dado": 6,
+            "dificuldade": 4,
+            "sucesso": "9",
+            "falha": "15"
+        },
+        "opcoes": [
+            {
+                "texto": "Jogar uma garrafa para distrair.",
+                "vaiPara": "9"
+            }
+        ]
+    },
+    "8": {
+        "texto": "Você tenta escalar a árvore mais próxima para ter uma visão melhor, mas o braço machucado torna cada movimento lento e doloroso. A poucos metros do chão, a madeira estala e você quase escorrega. Antes que consiga subir mais, um gemido baixo surge logo abaixo — um zumbi se aproximou, atraído pelo barulho. Preso numa posição ruim, você sabe que não vai conseguir subir nem descer rápido. Precisa improvisar.",
+        "opcoes": [
+            {
+                "texto": "Mover-se silenciosamente para outro galho e esperar o zumbi passar.",
+                "vaiPara": "9"
+            },
+            {
+                "texto": "Soltar um galho pesado na direção oposta para distrair o zumbi.",
+                "vaiPara": "9"
+            }
+        ]
+    },
+    "9": {
+        "texto": "Você dispara pela trilha estreita, ouvindo a criatura ainda distante atrás de você. O bosque começa a abrir e, entre as árvores, surge uma cerca metálica improvisada. Antes que você possa pensar em voltar, uma patrulha armada aparece do outro lado, apontando as armas diretamente para você. Eles parecem nervosos… e prontos para atirar.",
+        "opcoes": [
+            {
+                "texto": "Levantar as mãos e se entregar.",
+                "vaiPara": "13"
+            },
+            {
+                "texto": "Tentar fugir.",
+                "vaiPara": "15"
+            }
+        ]
+    },
+    "10": {
+        "texto": "A farmácia está em meia-luz; lâmpadas piscam no teto e o ar cheira a poeira e remédios abertos. Você avança com cuidado entre prateleiras caídas. Encontra alguns itens espalhados no chão — remédios, álcool e bandagens. De repente, um ruído seco ecoa nos fundos. Quando você olha para o balcão, uma criatura surge abaixada atrás dele, os olhos fixos em você.",
+        "opcoes": [
+            {
+                "texto": "Enfrentar a criatura.",
+                "vaiPara": "15"
+            },
+            {
+                "texto": "Fugir rapidamente.",
+                "vaiPara": "11"
+            }
+        ]
+    },
+    "11": {
+        "texto": "Você avança pela rua principal, cercado por carros abandonados e vitrines quebradas. Há fumaça subindo de algum lugar adiante, e ao fundo ecoa o som distante de um motor funcionando — alguém ainda está vivo. O vento carrega um cheiro forte de queimado, e cada passo faz o silêncio parecer mais pesado.",
+        "opcoes": [
+            {
+                "texto": "Seguir o som do motor.",
+                "vaiPara": "14"
+            },
+            {
+                "texto": "Entrar num beco lateral.",
+                "vaiPara": "12"
+            }
+        ]
+    },
+    "12": {
+        "texto": "Você percorre a rua principal, respirando fundo para controlar o medo. Mas, ao virar uma esquina estreita, esbarra em uma lata enferrujada que rola pelo asfalto fazendo um barulho metálico ensurdecedor. O som se espalha pela rua — e então você vê. Uma horda inteira de zumbis se vira na sua direção ao mesmo tempo, como se fossem um único organismo faminto. Eles começam a avançar, acelerando a cada passo.",
+        "opcoes": [
+            {
+                "texto": "Tente correr antes que a horda alcance você. Role os dados.",
+                "teste": {
+                    "dado": 6,
+                    "dificuldade": 7,
+                    "sucesso": "16",
+                    "falha": "15"
+                }
+            }
+        ]
+    },
+    "13": {
+        "texto": "Você ergue as mãos, sem forças para continuar correndo, enquanto a patrulha mira em você. Eles se aproximam com cautela, verificando seu corpo rapidamente. — “Nenhum ferimento… sem mordidas… ele está limpo!”, diz uma das vozes. Os soldados suspiram aliviados, “Venha. Estamos levando sobreviventes para o posto avançado. Aqui não é seguro.” Eles te ajudam a entrar no veículo militar. A porta se fecha, e você sente o motor roncar enquanto a patrulha se afasta do bosque. Pela primeira vez desde que acordou no hospital… você sente esperança. Você está salvo. Final bom — Patrulha do bosque."
+    },
+    "14": {
+        "texto": "Você segue o som de motor até avistar uma caminhonete reforçada, cercada por pessoas armadas com uniformes improvisados. Antes que você consiga chamá-los, eles apontam as armas na sua direção. Um deles, protegendo o rosto com um lenço, pede que você fique parado. Após um rápido exame para verificar mordidas e sinais de infecção, o grupo abaixa as armas, “Você deu sorte. Poucos chegam até aqui vivos.” Eles abrem a porta traseira do veículo e te puxam para dentro. A caminhonete arranca, deixando a cidade destruída para trás. Ao longe, você vê os muros de um abrigo fortificado. Você está salvo. Final bom — Cidade."
+    },
+    "15": {
+        "texto": "A dor é imediata. Algo rasga sua pele antes que você consiga reagir. O mundo gira enquanto você cai no chão, sentindo o calor do sangue escorrendo. Os sons ao redor se tornam abafados, como se viessem debaixo d’água. Você tenta se arrastar, tenta chamar por ajuda… mas seu corpo não responde. O frio começa a tomar seus dedos. Sua visão escurece. O último pensamento que passa pela sua mente é que não deveria ter acordado naquele hospital. Você foi infectado. Fim da jornada."
+    },
+    "16": {
+    "texto": "Você corre desesperadamente, desviando da horda por segundos até conseguir entrar em uma casa com a porta escancarada. Assim que entra, fecha-a com força e se afasta, arfando. O lugar parece abandonado há dias — móveis revirados, uma televisão caída e marcas de unhas nas paredes. Ainda assim, não há sinais de zumbis no interior. Você se aproxima de uma janela e, através das cortinas rasgadas, avista um carro alguns metros adiante, parado no meio da rua. Talvez haja uma chance de escapar. O som crescente da horda se aproxima novamente. Não há tempo a perder.",
+    "opcoes": [
+        {
+            "texto": "Correr até o carro antes que a horda alcance você. Role os dados.",
+            "teste": {
+                "dado": 6,
+                "dificuldade": 5,
+                "sucesso": "14",
+                "falha": "15"
+            }
+        }
+    ]
+}
+
+}

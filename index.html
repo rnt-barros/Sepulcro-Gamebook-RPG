@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepulcro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/zombie.png">
+</head>
+<body>
+     <header>
+    <h1>Sepulcro</h1>
+    <nav>
+      <button id="btn-instrucoes">Instruções</button>
+      <button id="btn-reiniciar">Reiniciar Jogo</button>
+    </nav>
+   
+  </header>
+
+  <main id="main">
+    <section id="conteudo"> </section>
+
+    <section id="opcoes" aria-live="polite"></section>
+  </main>
+
+  <aside id="ficha">
+    <h2>Ficha do Personagem</h2>
+    <ul id="atributos"></ul>
+    <h3>Inventário</h3>
+    <ul id="inventario"></ul>
+
+    <div id="dados">
+      <h4>Rolar Dados</h4>
+      <div id="dado-container">
+        <svg id="dado-svg" viewBox="0 0 100 100"></svg>
+      </div>
+       <button id="btn-rolar">Rolar Dados</button>
+    </div>
+  </aside>
+
+  <div id="modal-instrucoes" class="modal hidden">
+    <div class="modal-content">
+      <h3>Instruções</h3>
+      <p>
+        Este site é um livro jogo conhecido como gamebook.<br>
+        Leia o texto e escolha opções, suas escolhas podem ou não mudar o rumo da história!<br>
+        Alguns capítulos dão itens ou exigem testes com dados.<br>
+        A ficha à direita mostra atributos e inventário.
+      </p>
+
+      <button id="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+  <script src="./script/Dado.js"></script>
+  <script src="./script/Personagem.js"></script>
+  <script   type="module"  src="./script/Principal.js"></script>
+  <script src="./script/ModalReset.js"></script>
+    
+</body>
+</html>
